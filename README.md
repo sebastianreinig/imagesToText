@@ -1,18 +1,31 @@
 # imagesToText with OpenAI
 
+![imagesToText](https://github.com/user-attachments/assets/7bc6dcdf-2373-4719-865a-182030db58ed)
 
 
 ## Overview
-Zero-SQL is a web-based application that generates and executes SQL queries based on natural language input using OpenAI's API. The application is built with Flask and Python, providing a user-friendly interface for generating SQL queries without needing SQL knowledge. It also executes the generated SQL queries on a local SQLite database and displays the results in a table format.
+This Application allows users to upload images, which are then processed using OpenAI for data extraction. The process involves the following steps:
 
-Details to the API: OpenAI Platform Documentation
+File Upload:
+Users can upload multiple images (e.g., JPEGs) via a user-friendly web interface.
+
+Analysis with OpenAI:
+The uploaded images are sent to OpenAI's API for analysis.
+The AI extracts key information from the images, including:
+First Name
+Last Name
+DSGVO Consent (Yes/No)
+
+Display Results in a Table:
+The extracted information is displayed in a structured table format, showing:
+First Name
+Last Name
+GDPR Consent (Yes/No)
+
+Automation and Flexibility:
+The application is designed to handle various image formats and content, extracting the most relevant data efficiently.
 
 ## Requirements
-To run this project, you'll need the following dependencies:
-
-Flask
-OpenAI API
-SQLite3
 
 You can install these dependencies using:
 
@@ -30,10 +43,6 @@ python main.py
 Once the server is running, you can access the web application at http://127.0.0.1:5000.
 
 
-## Features
-Natural Language to SQL Query Conversion: Enter your question or query in natural language, and OpenAI will generate the SQL code.
-SQL Query Execution: The application automatically executes the generated SQL on a SQLite database.
-Results Display: The query results are displayed in a formatted table for easy viewing.
 
 ## How It Works
 Create a .env file and place your OpenAPI Key.
