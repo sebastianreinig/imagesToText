@@ -49,6 +49,11 @@ Create a .env file and place your OpenAPI Key.
 
 The application can convert images to text via http://127.0.0.1:5000.
 
+## Outlook
+ - Using response_format instead of a regex pasring
+ - Customizing the context of the incoming data
+ - Using a local ai like Ollama to process sensitive informations
+
 
 ## Credits
 This project was created with Python and Flask, leveraging OpenAI's API for natural language processing assistance.
